@@ -4,13 +4,9 @@ import random
 from random import getrandbits
 import names
 
-print ("[" + (time.strftime("%H:%M:%S")) + "]" + " --------------------------------------------")
-print ("[" + (time.strftime("%H:%M:%S")) + "]" + "           Fuck Who You Know              ")
-print ("[" + (time.strftime("%H:%M:%S")) + "]" + "          Developed by @mxnnxt            ")
-print ("[" + (time.strftime("%H:%M:%S")) + "]" + " --------------------------------------------\n")
 
 times = int(input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter the number of accounts you would like: ")))
-domain = input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter your domain (ex: domain.com): "))
+domain = input("[" + (time.strftime("%H:%M:%S") + "]" + " - Enter your domain (example: domain.com): "))
 
 headers = {
     'Referer': 'https://www.johnelliott.co/pages/lebron-james-x-john-elliott-nikelab-icon-friends-family-giveaway',
@@ -30,7 +26,7 @@ def submit():
     ('EMAIL', email),
     ('SHOESIZE', size),
     ('b_b0d3e1fe6af1cb8dbeeb1c333_6f82135082', ''),
-    ('_', '1533690953998'),
+    ('_', '"{}".format(getrandbits(40))'),
 	)
 
 	response = requests.get('https://johnelliott.us16.list-manage.com/subscribe/post-json', headers=headers, params=params)
