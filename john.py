@@ -28,7 +28,7 @@ def submit():
     ('id', '6f82135082'),
     ('c', 'jQuery31109362504305456354_1533690953997'),
     ('EMAIL', email),
-    ('SHOESIZE', '10'),
+    ('SHOESIZE', size),
     ('b_b0d3e1fe6af1cb8dbeeb1c333_6f82135082', ''),
     ('_', '1533690953998'),
 	)
